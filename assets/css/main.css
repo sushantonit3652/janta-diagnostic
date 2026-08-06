@@ -326,8 +326,8 @@ h6 {
 }
 
 .header .branding {
-  min-height: 60px;
-  padding: 10px 0;
+  min-height: 80px;
+  padding: 8px 0;
 }
 
 .header .logo {
@@ -335,13 +335,13 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 48px;
+  max-height: 64px;
   margin-right: 8px;
   transition: transform 0.3s ease;
 }
 
 .header .logo img:hover {
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
 
 .header .logo h1 {
@@ -1089,7 +1089,7 @@ section,
 .about .content ul i {
   flex-shrink: 0;
   font-size: 48px;
-  color: var(--accent-color);
+  color: var(--secondary-color);
   margin-right: 20px;
 }
 
