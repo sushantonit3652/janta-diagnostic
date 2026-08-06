@@ -12,9 +12,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Poppins",  sans-serif;
-  --nav-font: "Raleway",  sans-serif;
+  --nav-font: "Poppins",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -30,6 +30,10 @@
   --cta-bg-color: #c30a16; /* Brand Red */
   --cta-hover-bg-color: #a50812; /* Darker Brand Red */
   --secondary-color: #c30a16;
+  
+  /* Brand gradients for 50/50 balance */
+  --brand-gradient: linear-gradient(90deg, #033873 0%, #c30a16 100%);
+  --brand-gradient-hover: linear-gradient(90deg, #c30a16 0%, #033873 100%);
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. */
@@ -44,7 +48,7 @@
 
 /* Theme Options Selector Rules */
 
-/* 1. Dual-Tone Theme (Default Brand Combination: Navy + Crimson Red) */
+/* 1. Dual-Tone Theme (Default Brand Combination: Red + Navy 50/50) */
 body.theme-dual {
   --accent-color: #033873;
   --heading-color: #002352;
@@ -56,6 +60,43 @@ body.theme-dual {
   --cta-bg-color: #c30a16;
   --cta-hover-bg-color: #a50812;
   --secondary-color: #c30a16;
+  
+  --brand-gradient: linear-gradient(90deg, #033873 0%, #c30a16 100%);
+  --brand-gradient-hover: linear-gradient(90deg, #c30a16 0%, #033873 100%);
+}
+
+/* 2. Navy Blue Theme (Solid Brand Navy Blue Accent) */
+body.theme-navy {
+  --accent-color: #033873;
+  --heading-color: #002352;
+  --nav-color: #002352;
+  --nav-hover-color: #033873;
+  --nav-dropdown-color: #002352;
+  --nav-dropdown-hover-color: #033873;
+  
+  --cta-bg-color: #033873;
+  --cta-hover-bg-color: #022754;
+  --secondary-color: #033873;
+  
+  --brand-gradient: #033873;
+  --brand-gradient-hover: #022754;
+}
+
+/* 3. Crimson Red Theme (Solid Brand Crimson Red Accent) */
+body.theme-red {
+  --accent-color: #c30a16;
+  --heading-color: #7a0007;
+  --nav-color: #7a0007;
+  --nav-hover-color: #c30a16;
+  --nav-dropdown-color: #7a0007;
+  --nav-dropdown-hover-color: #c30a16;
+  
+  --cta-bg-color: #c30a16;
+  --cta-hover-bg-color: #a50812;
+  --secondary-color: #c30a16;
+  
+  --brand-gradient: #c30a16;
+  --brand-gradient-hover: #a50812;
 }
 
 /* 2. Navy Blue Theme (Solid Brand Navy Blue Accent) */
@@ -273,8 +314,9 @@ h6 {
 .header {
   color: var(--default-color);
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 9999;
   background-color: var(--background-color);
+  transform: translate3d(0, 0, 0); /* Force GPU layering to prevent 3D transform elements from overlapping header */
 }
 
 .header .topbar {
@@ -326,7 +368,7 @@ h6 {
 }
 
 .header .branding {
-  min-height: 80px;
+  min-height: 100px;
   padding: 8px 0;
 }
 
@@ -335,7 +377,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 64px;
+  max-height: 80px;
   margin-right: 8px;
   transition: transform 0.3s ease;
 }
@@ -354,21 +396,31 @@ h6 {
 .header .cta-btn,
 .header .cta-btn:focus {
   color: var(--contrast-color);
-  background: var(--cta-bg-color);
+  background: var(--brand-gradient);
   font-size: 14px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
   border-radius: 50px;
   transition: 0.3s;
+  border: none;
 }
 
 .header .cta-btn:hover,
 .header .cta-btn:focus:hover {
   color: var(--contrast-color);
-  background: var(--cta-hover-bg-color);
+  background: var(--brand-gradient-hover);
 }
 
 @media (max-width: 1200px) {
+  .header .branding {
+    min-height: 70px;
+    padding: 6px 0;
+  }
+
+  .header .logo img {
+    max-height: 52px;
+  }
+
   .header .logo {
     order: 1;
   }
@@ -381,6 +433,17 @@ h6 {
 
   .header .navmenu {
     order: 3;
+  }
+}
+
+@media (max-width: 575px) {
+  .header .branding {
+    min-height: 60px;
+    padding: 4px 0;
+  }
+
+  .header .logo img {
+    max-height: 40px;
   }
 }
 
@@ -950,13 +1013,14 @@ section,
   content: "";
   position: absolute;
   display: block;
-  width: 60px;
-  height: 3px;
-  background: var(--accent-color);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #033873 0%, #c30a16 100%);
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
+  border-radius: 2px;
 }
 
 .section-title p {
@@ -969,12 +1033,20 @@ section,
 .hero {
   width: 100%;
   min-height: calc(100vh - 112px);
-  padding: 80px 0;
+  padding: 100px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 35, 82, 0.6) 0%, rgba(0, 35, 82, 0.8) 100%);
+  z-index: 2;
 }
 
 .hero img {
@@ -993,78 +1065,121 @@ section,
 
 .hero .welcome h2 {
   margin: 0;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 54px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -1px;
+  line-height: 1.15;
 }
 
 .hero .welcome p {
-  font-size: 24px;
-  margin: 0;
+  font-size: 20px;
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 300;
 }
 
 .hero .content {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .hero .content .why-box {
   color: var(--contrast-color);
-  background: var(--accent-color);
-  padding: 30px;
-  border-radius: 4px;
+  background: var(--brand-gradient);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(195, 10, 22, 0.25);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero .content .why-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(195, 10, 22, 0.35);
 }
 
 .hero .content .why-box h3 {
   color: var(--contrast-color);
   font-weight: 700;
   font-size: 34px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .hero .content .why-box p {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  opacity: 0.9;
+  font-size: 14.5px;
+  line-height: 1.6;
 }
 
 .hero .content .why-box .more-btn {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--contrast-color), transparent 80%);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
   display: inline-block;
-  padding: 6px 30px 8px 30px;
+  padding: 8px 30px 10px 30px;
   border-radius: 50px;
-  transition: all ease-in-out 0.4s;
+  font-weight: 600;
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.3s ease;
 }
 
 .hero .content .why-box .more-btn i {
   font-size: 14px;
+  margin-left: 4px;
 }
 
 .hero .content .why-box .more-btn:hover {
   background: var(--surface-color);
-  color: var(--accent-color);
+  color: #c30a16;
+  border-color: var(--surface-color);
+  transform: scale(1.03);
 }
 
 .hero .content .icon-box {
   text-align: center;
-  border-radius: 10px;
-  background: color-mix(in srgb, var(--surface-color), transparent 20%);
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 12px 30px rgba(0, 35, 82, 0.08);
   padding: 40px 30px;
   width: 100%;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero .content .icon-box:hover {
+  transform: translateY(-8px);
+  background: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 35, 82, 0.15);
 }
 
 .hero .content .icon-box i {
-  font-size: 40px;
-  color: var(--accent-color);
+  font-size: 44px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.hero .content .row > div:nth-child(odd) .icon-box i {
+  color: #033873; /* Navy Blue */
+}
+
+.hero .content .row > div:nth-child(even) .icon-box i {
+  color: #c30a16; /* Crimson Red */
 }
 
 .hero .content .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
-  margin: 10px 0 20px 0;
+  color: #002352;
+  margin: 10px 0 15px 0;
 }
 
 .hero .content .icon-box p {
-  font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #4b5563;
 }
 
 /*--------------------------------------------------------------
@@ -1089,8 +1204,16 @@ section,
 .about .content ul i {
   flex-shrink: 0;
   font-size: 48px;
-  color: var(--secondary-color);
+  color: var(--accent-color);
   margin-right: 20px;
+}
+
+.about .content ul li:nth-child(odd) i {
+  color: #033873; /* Navy Blue */
+}
+
+.about .content ul li:nth-child(even) i {
+  color: #c30a16; /* Crimson Red */
 }
 
 .about .content ul h5 {
@@ -1164,11 +1287,14 @@ section,
 .services .service-item {
   background-color: var(--surface-color);
   text-align: center;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-  padding: 80px 20px;
-  transition: all ease-in-out 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 35, 82, 0.04);
+  padding: 60px 25px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   height: 100%;
 }
+
 
 .services .service-item .icon {
   margin: 0 auto;
@@ -1182,6 +1308,20 @@ section,
   margin-bottom: 20px;
   transition: 0.3s;
   transform-style: preserve-3d;
+}
+
+/* Alternate service icon colors for a perfect 50/50 red-blue mix */
+.services .col-lg-4:nth-child(odd) .service-item .icon {
+  background: #033873;
+}
+.services .col-lg-4:nth-child(odd) .service-item .icon::before {
+  background: rgba(3, 56, 115, 0.15);
+}
+.services .col-lg-4:nth-child(even) .service-item .icon {
+  background: #c30a16;
+}
+.services .col-lg-4:nth-child(even) .service-item .icon::before {
+  background: rgba(195, 10, 22, 0.15);
 }
 
 .services .service-item .icon i {
@@ -1216,20 +1356,37 @@ section,
 }
 
 .services .service-item:hover {
-  background: var(--accent-color);
-  border-color: var(--accent-color);
+  transform: translateY(-8px);
+}
+
+/* Odd items hover (Navy Blue) */
+.services .col-lg-4:nth-child(odd) .service-item:hover {
+  background: #033873;
+  border-color: #033873;
+  box-shadow: 0 20px 40px rgba(3, 56, 115, 0.25);
+}
+
+.services .col-lg-4:nth-child(odd) .service-item:hover .icon i {
+  color: #033873;
+}
+
+/* Even items hover (Crimson Red) */
+.services .col-lg-4:nth-child(even) .service-item:hover {
+  background: #c30a16;
+  border-color: #c30a16;
+  box-shadow: 0 20px 40px rgba(195, 10, 22, 0.25);
+}
+
+.services .col-lg-4:nth-child(even) .service-item:hover .icon i {
+  color: #c30a16;
 }
 
 .services .service-item:hover .icon {
   background: var(--surface-color);
 }
 
-.services .service-item:hover .icon i {
-  color: var(--accent-color);
-}
-
 .services .service-item:hover .icon::before {
-  background: color-mix(in srgb, var(--background-color), transparent 70%);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .services .service-item:hover h3,
@@ -1282,7 +1439,7 @@ section,
 }
 
 .appointment .php-email-form button[type=submit] {
-  background: var(--accent-color);
+  background: var(--brand-gradient);
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1291,7 +1448,7 @@ section,
 }
 
 .appointment .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
+  background: var(--brand-gradient-hover);
 }
 
 /*--------------------------------------------------------------
@@ -1764,7 +1921,7 @@ section,
 
 .contact .php-email-form button[type=submit] {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: var(--brand-gradient);
   border: 0;
   padding: 10px 36px;
   transition: 0.4s;
@@ -1772,7 +1929,7 @@ section,
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: var(--brand-gradient-hover);
 }
 
 /*--------------------------------------------------------------
