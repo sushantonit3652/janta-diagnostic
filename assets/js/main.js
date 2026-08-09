@@ -33,6 +33,10 @@
     mobileNavToggleBtn.classList.toggle('bi-x');
   }
   mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+  mobileNavToggleBtn.addEventListener('touchstart', function (e) {
+    e.preventDefault();
+    mobileNavToogle();
+  }, { passive: false });
 
   /**
    * Hide mobile nav on same-page/hash links

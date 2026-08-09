@@ -636,7 +636,7 @@ h6 {
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     box-shadow: none;
     overflow-y: auto;
-    transition: 0.3s;
+    transition: 0.12s;
     z-index: 9998;
   }
 
@@ -732,7 +732,7 @@ h6 {
     inset: 0;
     background: rgba(0, 35, 82, 0.95);
     /* Branded Navy Blue solid overlay for premium contrast */
-    transition: 0.3s;
+    transition: 0.12s;
     z-index: 99998;
   }
 
@@ -1377,22 +1377,29 @@ section,
   transform-style: preserve-3d;
 }
 
-/* Service icon border/offset colors */
-.services .service-item .icon {
-  border: 2px solid #033873;
-  /* Navy Blue border */
+/* Alternate service icon border/offset colors for a perfect 50/50 red-blue mix */
+.services .col-lg-4:nth-child(odd) .service-item .icon {
+  border: 2px solid #033873; /* Navy Blue border */
 }
-
-.services .service-item .icon::before {
+.services .col-lg-4:nth-child(odd) .service-item .icon::before {
   background: rgba(3, 56, 115, 0.15);
-  /* Soft Navy Blue offset shadow */
+}
+.services .col-lg-4:nth-child(even) .service-item .icon {
+  border: 2px solid #c30a16; /* Crimson Red border */
+}
+.services .col-lg-4:nth-child(even) .service-item .icon::before {
+  background: rgba(195, 10, 22, 0.15);
 }
 
 .services .service-item .icon i {
   font-size: 38px;
-  color: #033873;
-  /* Navy Blue icon by default */
   transition: ease-in-out 0.3s;
+}
+.services .col-lg-4:nth-child(odd) .service-item .icon i {
+  color: #033873; /* Navy Blue icon by default */
+}
+.services .col-lg-4:nth-child(even) .service-item .icon i {
+  color: #c30a16; /* Crimson Red icon by default */
 }
 
 .services .service-item .icon::before {
@@ -1420,25 +1427,45 @@ section,
   margin-bottom: 0;
 }
 
-.services .service-item:hover {
-  transform: translateY(-8px);
-  background: #f4f8fc;
-  /* Soft Navy Blue light tint for all hovers */
-  border-color: rgba(3, 56, 115, 0.15);
-  box-shadow: 0 20px 40px rgba(3, 56, 115, 0.08);
+@media (min-width: 769px) {
+  .services .service-item:hover {
+    transform: translateY(-8px);
+  }
+
+  /* Odd items hover (swap colors inside the icon, change card background to light blue tint) */
+  .services .col-lg-4:nth-child(odd) .service-item:hover {
+    background: #f4f8fc; /* Soft Navy Blue light tint */
+    border-color: rgba(3, 56, 115, 0.25);
+    box-shadow: 0 20px 40px rgba(3, 56, 115, 0.08);
+  }
+  .services .col-lg-4:nth-child(odd) .service-item:hover .icon {
+    background: #033873;
+  }
+  .services .col-lg-4:nth-child(odd) .service-item:hover .icon i {
+    color: var(--contrast-color) !important;
+  }
+  .services .col-lg-4:nth-child(odd) .service-item:hover .icon::before {
+    background: rgba(3, 56, 115, 0.35);
+  }
+
+  /* Even items hover (swap colors inside the icon, change card background to light red/pink tint) */
+  .services .col-lg-4:nth-child(even) .service-item:hover {
+    background: #fdf5f5; /* Soft Crimson Red light tint */
+    border-color: rgba(195, 10, 22, 0.25);
+    box-shadow: 0 20px 40px rgba(195, 10, 22, 0.08);
+  }
+  .services .col-lg-4:nth-child(even) .service-item:hover .icon {
+    background: #c30a16;
+  }
+  .services .col-lg-4:nth-child(even) .service-item:hover .icon i {
+    color: var(--contrast-color) !important;
+  }
+  .services .col-lg-4:nth-child(even) .service-item:hover .icon::before {
+    background: rgba(195, 10, 22, 0.35);
+  }
 }
 
-.services .service-item:hover .icon {
-  background: #033873;
-}
 
-.services .service-item:hover .icon i {
-  color: var(--contrast-color) !important;
-}
-
-.services .service-item:hover .icon::before {
-  background: rgba(3, 56, 115, 0.35);
-}
 
 /*--------------------------------------------------------------
 # Appointment Section
@@ -1519,7 +1546,7 @@ section,
   font-size: 15px;
 }
 
-.departments .nav-link:hover {
+.departments .nav-link:not(.active):hover {
   color: var(--accent-color);
 }
 
@@ -1554,7 +1581,7 @@ section,
   }
 
   .departments .nav-link.active {
-    color: var(--accent-color);
+    color: var(--contrast-color);
     background: var(--accent-color);
   }
 }
