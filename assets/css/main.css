@@ -13,24 +13,32 @@
 /* Fonts */
 :root {
   --default-font: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Poppins",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --heading-font: "Poppins", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #002352; /* Color for headings, subheadings and title throughout the website (Brand Navy) */
-  --accent-color: #033873; /* Accent color that represents your brand on the website. (Brand Navy) */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds */
-  
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #444444;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #002352;
+  /* Color for headings, subheadings and title throughout the website (Brand Navy) */
+  --accent-color: #033873;
+  /* Accent color that represents your brand on the website. (Brand Navy) */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds */
+
   /* Custom brand colors and CTA states */
-  --cta-bg-color: #c30a16; /* Brand Red */
-  --cta-hover-bg-color: #a50812; /* Darker Brand Red */
+  --cta-bg-color: #c30a16;
+  /* Brand Red */
+  --cta-hover-bg-color: #a50812;
+  /* Darker Brand Red */
   --secondary-color: #c30a16;
-  
+
   /* Brand gradients for 50/50 balance */
   --brand-gradient: linear-gradient(90deg, #033873 0%, #c30a16 100%);
   --brand-gradient-hover: linear-gradient(90deg, #c30a16 0%, #033873 100%);
@@ -38,12 +46,18 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. */
 :root {
-  --nav-color: #002352;  /* The default color of the main navmenu links */
-  --nav-hover-color: #c30a16; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items */
-  --nav-dropdown-color: #002352; /* Used for navigation links of the dropdown items */
-  --nav-dropdown-hover-color: #c30a16; /* Applied to dropdown navigation links when hovered */
+  --nav-color: #002352;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #c30a16;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items */
+  --nav-dropdown-color: #002352;
+  /* Used for navigation links of the dropdown items */
+  --nav-dropdown-hover-color: #c30a16;
+  /* Applied to dropdown navigation links when hovered */
 }
 
 /* Theme Options Selector Rules */
@@ -56,11 +70,11 @@ body.theme-dual {
   --nav-hover-color: #c30a16;
   --nav-dropdown-color: #002352;
   --nav-dropdown-hover-color: #c30a16;
-  
+
   --cta-bg-color: #c30a16;
   --cta-hover-bg-color: #a50812;
   --secondary-color: #c30a16;
-  
+
   --brand-gradient: linear-gradient(90deg, #033873 0%, #c30a16 100%);
   --brand-gradient-hover: linear-gradient(90deg, #c30a16 0%, #033873 100%);
 }
@@ -73,11 +87,11 @@ body.theme-navy {
   --nav-hover-color: #033873;
   --nav-dropdown-color: #002352;
   --nav-dropdown-hover-color: #033873;
-  
+
   --cta-bg-color: #033873;
   --cta-hover-bg-color: #022754;
   --secondary-color: #033873;
-  
+
   --brand-gradient: #033873;
   --brand-gradient-hover: #022754;
 }
@@ -90,11 +104,11 @@ body.theme-red {
   --nav-hover-color: #c30a16;
   --nav-dropdown-color: #7a0007;
   --nav-dropdown-hover-color: #c30a16;
-  
+
   --cta-bg-color: #c30a16;
   --cta-hover-bg-color: #a50812;
   --secondary-color: #c30a16;
-  
+
   --brand-gradient: #c30a16;
   --brand-gradient-hover: #a50812;
 }
@@ -107,7 +121,7 @@ body.theme-navy {
   --nav-hover-color: #033873;
   --nav-dropdown-color: #002352;
   --nav-dropdown-hover-color: #033873;
-  
+
   --cta-bg-color: #033873;
   --cta-hover-bg-color: #022754;
   --secondary-color: #033873;
@@ -121,7 +135,7 @@ body.theme-red {
   --nav-hover-color: #c30a16;
   --nav-dropdown-color: #7a0007;
   --nav-dropdown-hover-color: #c30a16;
-  
+
   --cta-bg-color: #c30a16;
   --cta-hover-bg-color: #a50812;
   --secondary-color: #c30a16;
@@ -316,7 +330,8 @@ h6 {
   transition: all 0.5s;
   z-index: 9999;
   background-color: var(--background-color);
-  transform: translate3d(0, 0, 0); /* Force GPU layering to prevent 3D transform elements from overlapping header */
+  transform: translate3d(0, 0, 0);
+  /* Force GPU layering to prevent 3D transform elements from overlapping header */
 }
 
 .header .topbar {
@@ -413,12 +428,12 @@ h6 {
 
 @media (max-width: 1200px) {
   .header .branding {
-    min-height: 70px;
+    min-height: 85px;
     padding: 6px 0;
   }
 
   .header .logo img {
-    max-height: 52px;
+    max-height: 68px;
   }
 
   .header .logo {
@@ -438,12 +453,12 @@ h6 {
 
 @media (max-width: 575px) {
   .header .branding {
-    min-height: 60px;
-    padding: 4px 0;
+    min-height: 75px;
+    padding: 6px 0;
   }
 
   .header .logo img {
-    max-height: 40px;
+    max-height: 58px;
   }
 }
 
@@ -696,26 +711,35 @@ h6 {
     overflow: hidden;
   }
 
+  .mobile-nav-active .header {
+    transform: none !important;
+    /* Clears GPU layers to allow viewport relative fixed overlays */
+  }
+
   .mobile-nav-active .mobile-nav-toggle {
     color: #fff;
     position: absolute;
     font-size: 32px;
-    top: 15px;
-    right: 15px;
+    top: 25px;
+    right: 25px;
     margin-right: 0;
-    z-index: 9999;
+    z-index: 99999;
   }
 
   .mobile-nav-active .navmenu {
     position: fixed;
     overflow: hidden;
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    background: rgba(0, 35, 82, 0.95);
+    /* Branded Navy Blue solid overlay for premium contrast */
     transition: 0.3s;
+    z-index: 99998;
   }
 
   .mobile-nav-active .navmenu>ul {
     display: block;
+    background-color: #ffffff;
+    /* Contrast dropdown card */
   }
 }
 
@@ -761,11 +785,11 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 16px;
+  font-size: 20px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-right: 10px;
   transition: 0.3s;
@@ -967,7 +991,7 @@ section,
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 60px 0;
-  scroll-margin-top: 72px;
+  scroll-margin-top: 100px;
   overflow: clip;
 }
 
@@ -975,7 +999,7 @@ section,
 
   section,
   .section {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 80px;
   }
 }
 
@@ -1045,7 +1069,7 @@ section,
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0, 35, 82, 0.6) 0%, rgba(0, 35, 82, 0.8) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.65) 100%);
   z-index: 2;
 }
 
@@ -1056,7 +1080,15 @@ section,
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .hero img {
+    object-position: 65% center;
+    /* Center-right focus on mobile to reveal diagnostic equipment */
+  }
 }
 
 .hero .container {
@@ -1077,6 +1109,36 @@ section,
   margin-top: 15px;
   color: rgba(255, 255, 255, 0.85);
   font-weight: 300;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    min-height: auto;
+    padding: 60px 0;
+  }
+
+  .hero .welcome h2 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .welcome h2 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .hero .welcome .fs-4 {
+    font-size: 1.15rem !important;
+  }
+
+  .hero .welcome h3.h4 {
+    font-size: 1rem !important;
+  }
+
+  .hero .welcome p.lead {
+    font-size: 0.9rem !important;
+  }
 }
 
 .hero .content {
@@ -1156,17 +1218,19 @@ section,
 }
 
 .hero .content .icon-box i {
-  font-size: 44px;
+  font-size: 56px;
   margin-bottom: 15px;
   display: inline-block;
 }
 
-.hero .content .row > div:nth-child(odd) .icon-box i {
-  color: #033873; /* Navy Blue */
+.hero .content .row>div:nth-child(odd) .icon-box i {
+  color: #033873;
+  /* Navy Blue */
 }
 
-.hero .content .row > div:nth-child(even) .icon-box i {
-  color: #c30a16; /* Crimson Red */
+.hero .content .row>div:nth-child(even) .icon-box i {
+  color: #c30a16;
+  /* Crimson Red */
 }
 
 .hero .content .icon-box h4 {
@@ -1203,17 +1267,19 @@ section,
 
 .about .content ul i {
   flex-shrink: 0;
-  font-size: 48px;
-  color: var(--accent-color);
+  font-size: 60px;
+  color: var(--cta-bg-color);
   margin-right: 20px;
 }
 
 .about .content ul li:nth-child(odd) i {
-  color: #033873; /* Navy Blue */
+  color: #c30a16;
+  /* Crimson Red */
 }
 
 .about .content ul li:nth-child(even) i {
-  color: #c30a16; /* Crimson Red */
+  color: #c30a16;
+  /* Crimson Red */
 }
 
 .about .content ul h5 {
@@ -1240,7 +1306,7 @@ section,
 --------------------------------------------------------------*/
 .stats i {
   color: var(--contrast-color);
-  background-color: var(--accent-color);
+  background-color: #c30a16;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
   width: 54px;
   height: 54px;
@@ -1298,9 +1364,10 @@ section,
 
 .services .service-item .icon {
   margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  background: var(--accent-color);
+  width: 80px;
+  height: 80px;
+  background: var(--surface-color);
+  /* White background by default */
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -1310,23 +1377,21 @@ section,
   transform-style: preserve-3d;
 }
 
-/* Alternate service icon colors for a perfect 50/50 red-blue mix */
-.services .col-lg-4:nth-child(odd) .service-item .icon {
-  background: #033873;
+/* Service icon border/offset colors */
+.services .service-item .icon {
+  border: 2px solid #033873;
+  /* Navy Blue border */
 }
-.services .col-lg-4:nth-child(odd) .service-item .icon::before {
+
+.services .service-item .icon::before {
   background: rgba(3, 56, 115, 0.15);
-}
-.services .col-lg-4:nth-child(even) .service-item .icon {
-  background: #c30a16;
-}
-.services .col-lg-4:nth-child(even) .service-item .icon::before {
-  background: rgba(195, 10, 22, 0.15);
+  /* Soft Navy Blue offset shadow */
 }
 
 .services .service-item .icon i {
-  color: var(--contrast-color);
-  font-size: 28px;
+  font-size: 38px;
+  color: #033873;
+  /* Navy Blue icon by default */
   transition: ease-in-out 0.3s;
 }
 
@@ -1357,41 +1422,22 @@ section,
 
 .services .service-item:hover {
   transform: translateY(-8px);
-}
-
-/* Odd items hover (Navy Blue) */
-.services .col-lg-4:nth-child(odd) .service-item:hover {
-  background: #033873;
-  border-color: #033873;
-  box-shadow: 0 20px 40px rgba(3, 56, 115, 0.25);
-}
-
-.services .col-lg-4:nth-child(odd) .service-item:hover .icon i {
-  color: #033873;
-}
-
-/* Even items hover (Crimson Red) */
-.services .col-lg-4:nth-child(even) .service-item:hover {
-  background: #c30a16;
-  border-color: #c30a16;
-  box-shadow: 0 20px 40px rgba(195, 10, 22, 0.25);
-}
-
-.services .col-lg-4:nth-child(even) .service-item:hover .icon i {
-  color: #c30a16;
+  background: #f4f8fc;
+  /* Soft Navy Blue light tint for all hovers */
+  border-color: rgba(3, 56, 115, 0.15);
+  box-shadow: 0 20px 40px rgba(3, 56, 115, 0.08);
 }
 
 .services .service-item:hover .icon {
-  background: var(--surface-color);
+  background: #033873;
+}
+
+.services .service-item:hover .icon i {
+  color: var(--contrast-color) !important;
 }
 
 .services .service-item:hover .icon::before {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.services .service-item:hover h3,
-.services .service-item:hover p {
-  color: var(--contrast-color);
+  background: rgba(3, 56, 115, 0.35);
 }
 
 /*--------------------------------------------------------------
@@ -1867,9 +1913,9 @@ section,
 .contact .info-item i {
   color: var(--contrast-color);
   background: var(--accent-color);
-  font-size: 20px;
-  width: 44px;
-  height: 44px;
+  font-size: 26px;
+  width: 56px;
+  height: 56px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2001,7 +2047,7 @@ section,
   margin-bottom: 12px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   padding-bottom: 6px;
 }
 
@@ -2045,7 +2091,7 @@ section,
   height: 16px;
   border-radius: 4px;
   overflow: hidden;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
 }
 
