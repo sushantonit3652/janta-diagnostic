@@ -392,7 +392,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 80px;
+  max-height: 105px;
   margin-right: 8px;
   transition: transform 0.3s ease;
 }
@@ -427,13 +427,17 @@ h6 {
 }
 
 @media (max-width: 1200px) {
+  .header {
+    background-color: #f4f8fc !important;
+  }
+
   .header .branding {
     min-height: 85px;
     padding: 6px 0;
   }
 
   .header .logo img {
-    max-height: 68px;
+    max-height: 60px;
   }
 
   .header .logo {
@@ -458,7 +462,7 @@ h6 {
   }
 
   .header .logo img {
-    max-height: 58px;
+    max-height: 48px;
   }
 }
 
@@ -636,7 +640,7 @@ h6 {
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     box-shadow: none;
     overflow-y: auto;
-    transition: 0.12s;
+    transition: none;
     z-index: 9998;
   }
 
@@ -713,6 +717,7 @@ h6 {
 
   .mobile-nav-active .header {
     transform: none !important;
+    transition: none !important;
     /* Clears GPU layers to allow viewport relative fixed overlays */
   }
 
@@ -732,7 +737,7 @@ h6 {
     inset: 0;
     background: rgba(0, 35, 82, 0.95);
     /* Branded Navy Blue solid overlay for premium contrast */
-    transition: 0.12s;
+    transition: none;
     z-index: 99998;
   }
 
@@ -764,7 +769,7 @@ h6 {
 }
 
 .footer .footer-about .logo img {
-  max-height: 40px;
+  max-height: 100px;
   margin-right: 6px;
 }
 
@@ -1111,6 +1116,27 @@ section,
   font-weight: 300;
 }
 
+.hero .welcome .welcome-tagline {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.hero .welcome .welcome-desc {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 15px;
+}
+
+.hero .welcome .welcome-meta {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 15px;
+}
+
 @media (max-width: 991px) {
   .hero {
     min-height: auto;
@@ -1123,21 +1149,41 @@ section,
 }
 
 @media (max-width: 768px) {
+  .hero::before {
+    background: rgba(255, 255, 255, 0.82) !important;
+  }
+
   .hero .welcome h2 {
-    font-size: 28px;
+    font-size: 28px !important;
     line-height: 1.25;
+    color: #002352 !important;
   }
 
-  .hero .welcome .fs-4 {
-    font-size: 1.15rem !important;
+  .hero .welcome .welcome-tagline {
+    font-size: 18px !important;
+    color: #033873 !important;
+    font-weight: 700 !important;
   }
 
-  .hero .welcome h3.h4 {
-    font-size: 1rem !important;
+  .hero .welcome .welcome-desc {
+    font-size: 16px !important;
+    color: #4a5568 !important;
+    font-weight: 500 !important;
   }
 
-  .hero .welcome p.lead {
-    font-size: 0.9rem !important;
+  .hero .welcome .welcome-meta {
+    font-size: 14px !important;
+    color: #718096 !important;
+  }
+
+  .hero .welcome .btn-outline-light {
+    color: #033873 !important;
+    border-color: #033873 !important;
+  }
+
+  .hero .welcome .btn-outline-light:hover {
+    background-color: #033873 !important;
+    color: #ffffff !important;
   }
 }
 
