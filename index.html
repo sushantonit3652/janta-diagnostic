@@ -28,7 +28,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.css?v=2.2" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Medilab
@@ -45,10 +45,11 @@
 
     <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
+        <div class="contact-info d-flex align-items-center flex-wrap">
           <i class="bi bi-envelope d-flex align-items-center"><a
               href="mailto:jantadiagnosticscentre@gmail.com">jantadiagnosticscentre@gmail.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 8126189415, 9719951986</span></i>
+          <i class="bi bi-phone d-flex align-items-center ms-3 ms-md-4"><span>+91 8126189415, 9719951986</span></i>
+          <i class="bi bi-droplet-fill text-danger d-none d-lg-flex align-items-center ms-4"><span class="fw-semibold">Blood Bank 24x7: +91 90583-95342</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
           <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
@@ -106,6 +107,10 @@
           <div class="d-flex flex-wrap gap-3 mb-4">
             <a href="#appointment" class="cta-btn text-white px-4 py-2 rounded-5 fw-bold"
               style="background: var(--brand-gradient); border: none; text-decoration: none;">Book a Test</a>
+            <a href="tel:+919058395342" class="btn btn-danger px-4 py-2 rounded-5 fw-bold d-inline-flex align-items-center gap-2"
+              style="border-radius: 50px;">
+              <i class="bi bi-droplet-fill"></i> 24x7 Blood Bank
+            </a>
             <a href="#contact" class="btn btn-outline-light px-4 py-2 rounded-5 fw-bold">Contact Us</a>
           </div>
         </div><!-- End Welcome -->
@@ -171,49 +176,66 @@
 
       <div class="container">
 
-        <div class="row gy-4 gx-5">
+        <div class="row gy-4 gx-5 align-items-center">
 
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="Janta Diagnostic Centre & Blood Bank Facility">
-            <!-- Replacing YouTube link with a local WhatsApp contact trigger for easy client interactions -->
-            <a href="https://wa.me/918126189415" target="_blank"
-              class="pulsating-play-btn d-flex align-items-center justify-content-center"
-              style="font-size: 24px; color: white; background: var(--cta-bg-color); text-decoration: none;"><i
-                class="bi bi-whatsapp"></i></a>
+            <div class="about-image-card">
+              <img src="assets/img/facility-building.jpg" class="img-fluid" alt="Janta Diagnostic Centre & Blood Bank Facility Building Noorpur">
+              
+              <div class="about-floating-badge about-badge-top">
+                <div class="badge-icon"><i class="bi bi-shield-check"></i></div>
+                <div class="badge-text">
+                  <h6>ISO 9001:2015</h6>
+                  <p>Certified Laboratory</p>
+                </div>
+              </div>
+
+              <div class="about-floating-badge about-badge-bottom blood-badge">
+                <div class="badge-icon"><i class="bi bi-droplet-fill"></i></div>
+                <div class="badge-text">
+                  <h6>24x7 Emergency Blood Bank</h6>
+                  <p>Moradabad Road, Noorpur</p>
+                </div>
+              </div>
+
+              <a href="assets/img/facility-building.jpg" class="glightbox pulsating-play-btn d-flex align-items-center justify-content-center"
+                data-gallery="about-facility" data-glightbox="title: Janta Diagnostic Centre & Blood Bank Facility; description: Modern 3-storey building with comprehensive diagnostic & 24/7 blood bank services on Moradabad Road, Noorpur."
+                title="View Full Facility Photo">
+                <i class="bi bi-arrows-fullscreen text-white"></i>
+              </a>
+            </div>
           </div>
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <div class="d-inline-block badge px-3 py-2 rounded-5 mb-3 text-white" style="background: var(--cta-bg-color); font-size: 13px;">Accurate • Reliable • Trusted</div>
             <h3>About Janta Diagnostic</h3>
             <h4 class="h5 text-primary mb-3">Your Health, Our Commitment</h4>
             <p>
-              Janta Diagnostic Centre was established in 2014 with the vision of providing accurate, reliable and
-              affordable diagnostic services to the local community. Recognising the need for accessible blood bank
-              services, Janta Blood Bank was established in 2022. Today, Janta Diagnostic Centre & Blood Bank brings
-              together pathology, radiology, ECG and blood bank services under one roof.
+              Established in 2014, <strong>Janta Diagnostic Centre</strong> was founded with the vision of providing accurate, dependable, and affordable diagnostic services to the community in Noorpur and Bijnor district. In 2022, recognizing the urgent need for accessible emergency transfusion support, <strong>Janta Charitable Blood Centre</strong> was established under <em>Jan Jeevan Kalyan Samiti (Regd.)</em>.
+            </p>
+            <p class="mb-4">
+              Today, our state-of-the-art multi-storey diagnostic facility brings together advanced Pathology, Biochemistry, Digital X-Ray, ECG, and a 24/7 Blood Bank under one roof.
             </p>
             <ul>
               <li>
                 <i class="fa-solid fa-droplet text-danger"></i>
                 <div>
-                  <h5>Safe Blood & Timely Support</h5>
-                  <p>Providing safe, timely and accessible blood bank services for patients and families, with special
-                    free blood support for thalassemia patients (subject to availability).</p>
+                  <h5>24/7 Safe Blood & Timely Support</h5>
+                  <p>Licensed blood bank (Lic. No. UP/B & B.P./2022) offering Whole Blood, PRBC, Platelets, and FFP with free blood support for thalassemia patients (subject to availability).</p>
                 </div>
               </li>
               <li>
                 <i class="fa-solid fa-microscope text-danger"></i>
                 <div>
-                  <h5>Accurate & Reliable Diagnostics</h5>
-                  <p>To provide pathology, biochemistry, Digital X-Ray, and ECG investigations with the highest
-                    standards of quality, precision, and clinical care.</p>
+                  <h5>Advanced Automated Diagnostics</h5>
+                  <p>Equipped with the Erba EM 200 NEO automated biochemistry analyzer, multi-parameter haematology cell counters, and high-frequency Digital X-Ray reporting by Dr. Sunil Agarwal (MBBS, MD Radiology).</p>
                 </div>
               </li>
               <li>
-                <i class="fa-solid fa-heart-pulse text-danger"></i>
+                <i class="fa-solid fa-hand-holding-heart text-danger"></i>
                 <div>
-                  <h5>Community Health Commitment</h5>
-                  <p>We contribute to a healthier community through professional expertise, regular diagnostic health
-                    camps, blood donation drives, and compassionate patient care.</p>
+                  <h5>Hygienic Environment & Home Collection</h5>
+                  <p>Sanitized sample collection rooms, certified laboratory technologists, and convenient doorstep blood sample collection across Noorpur and nearby areas.</p>
                 </div>
               </li>
             </ul>
@@ -230,41 +252,69 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+        <div class="row">
 
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="fa-solid fa-user-doctor"></i>
+          <div class="col-6 col-lg-3 stats-col">
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Doctors</p>
+              <div class="stats-icon-wrap">
+                <i class="fa-solid fa-calendar-check text-white"></i>
+              </div>
+              <div class="stats-number">
+                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1"
+                  class="purecounter">10</span><span class="stats-suffix">+</span>
+              </div>
+              <div class="stats-label">
+                <span class="stats-title">Years of Service</span>
+                <span class="stats-subtitle">(Since 2014)</span>
+              </div>
             </div>
           </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="fa-regular fa-hospital"></i>
+          <div class="col-6 col-lg-3 stats-col">
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Departments</p>
+              <div class="stats-icon-wrap">
+                <i class="fa-solid fa-droplet text-white"></i>
+              </div>
+              <div class="stats-number">
+                <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1"
+                  class="purecounter">24</span><span class="stats-suffix">/7</span>
+              </div>
+              <div class="stats-label">
+                <span class="stats-title">Emergency Blood Bank</span>
+                <span class="stats-subtitle">(Round-the-Clock)</span>
+              </div>
             </div>
           </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="fas fa-flask"></i>
+          <div class="col-6 col-lg-3 stats-col">
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Research Labs</p>
+              <div class="stats-icon-wrap">
+                <i class="fas fa-microscope text-white"></i>
+              </div>
+              <div class="stats-number">
+                <span data-purecounter-start="0" data-purecounter-end="50000" data-purecounter-separator="true" data-purecounter-duration="1"
+                  class="purecounter">50000</span><span class="stats-suffix">+</span>
+              </div>
+              <div class="stats-label">
+                <span class="stats-title">Accurate Tests Conducted</span>
+                <span class="stats-subtitle">(ISO Certified Lab)</span>
+              </div>
             </div>
           </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="fas fa-award"></i>
+          <div class="col-6 col-lg-3 stats-col">
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Awards</p>
+              <div class="stats-icon-wrap">
+                <i class="fas fa-shield-halved text-white"></i>
+              </div>
+              <div class="stats-number">
+                <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1"
+                  class="purecounter">100</span><span class="stats-suffix">%</span>
+              </div>
+              <div class="stats-label">
+                <span class="stats-title">Quality Assured</span>
+                <span class="stats-subtitle">(ISO 9001:2015)</span>
+              </div>
             </div>
           </div><!-- End Stats Item -->
 
@@ -486,12 +536,10 @@
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Haematology</h3>
                     <p class="fst-italic">Laboratory investigations related to blood and blood-forming systems.</p>
-                    <p>Our hematology department performs tests like Complete Blood Count (CBC), hemoglobin assessment,
-                      blood typing, and other screenings to identify anemia, clotting disorders, leukemia, and
-                      infections with high clinical accuracy.</p>
+                    <p>Our hematology department is equipped with multi-parameter automated cell counters and digital testing workstations. We perform Complete Blood Count (CBC), hemoglobin assessment, blood grouping, ESR, peripheral blood smears, and screening for anemia, clotting disorders, and infections with high clinical accuracy.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-1.jpg" alt="Haematology at Janta Diagnostic" class="img-fluid">
+                    <img src="assets/img/lab-haematology.jpg" alt="Haematology at Janta Diagnostic" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -499,13 +547,12 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Biochemistry</h3>
-                    <p class="fst-italic">Biochemical investigations supporting diagnosis and health monitoring.</p>
-                    <p>We provide comprehensive biochemistry analysis including liver function tests (LFT), kidney
-                      function tests (KFT), lipid profile, blood glucose monitoring, HbA1c, and other metabolic assays.
+                    <p class="fst-italic">Biochemical investigations powered by fully automated analyzers.</p>
+                    <p>Powered by the Erba EM 200 NEO fully automated clinical chemistry analyzer. We provide comprehensive metabolic panels including Liver Function Tests (LFT), Kidney Function Tests (KFT), Lipid Profile, Blood Glucose, HbA1c, Electrolytes, and enzyme assays with rapid turnaround and precision quality control.
                     </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-2.jpg" alt="Biochemistry at Janta Diagnostic" class="img-fluid">
+                    <img src="assets/img/lab-biochemistry.jpg" alt="Biochemistry Analyzer Erba EM 200 NEO at Janta Diagnostic" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -525,14 +572,13 @@
               <div class="tab-pane" id="departments-tab-4">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Serology</h3>
+                    <h3>Serology & Immunoassay</h3>
                     <p class="fst-italic">Diagnostic investigations involving antibodies and immune responses.</p>
-                    <p>We perform serological tests for Dengue, Typhoid (Widal), Rheumatoid Factor (RA), HIV, Hepatitis
-                      B/C, and other immune reactions to provide rapid and accurate diagnosis of immunological status.
+                    <p>Our dedicated serology and immunoassay station performs rapid and automated testing for Dengue (NS1, IgM/IgG), Typhoid (Widal), Rheumatoid Factor (RA), HIV, HBsAg, HCV, Thyroid profile, and specialized immunological markers.
                     </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-4.jpg" alt="Serology at Janta Diagnostic" class="img-fluid">
+                    <img src="assets/img/lab-haematology.jpg" alt="Serology and Immunoassay at Janta Diagnostic" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -569,14 +615,11 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Blood Bank</h3>
-                    <p class="fst-italic">Blood and blood component services with a focus on safe, timely and accessible
-                      support.</p>
-                    <p>Established in 2022, Janta Blood Bank provides Whole Blood, Packed Red Blood Cells (PRBC),
-                      Platelets, and Plasma. We are proud to offer free blood support for thalassemia patients, subject
-                      to requirements and availability.</p>
+                    <p class="fst-italic">Blood and blood component services with a focus on safe, timely and accessible support (24x7).</p>
+                    <p>Established in 2022 under Jan Jeevan Kalyan Samiti (Regd.), Janta Charitable Blood Centre provides 24x7 Whole Blood, Packed Red Blood Cells (PRBC), Platelets, and Fresh Frozen Plasma (FFP). We are proud to provide free blood support for thalassemia patients, subject to requirements and availability.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-2.jpg" alt="Blood Bank at Janta Diagnostic" class="img-fluid">
+                    <img src="assets/img/blood-bank-center.jpg" alt="Blood Bank at Janta Diagnostic" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -643,13 +686,17 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt="Janta Technical Team">
+              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt="Mohammad Shadan & Rahul Kumar - Janta Leadership Team">
               </div>
               <div class="member-info">
-                <h4>Technical & Support Team</h4>
-                <span>Laboratory, X-Ray & Blood Bank Professionals</span>
-                <p>Led by Mohammad Shadan (Tech Supervisor), Rahul Kumar (Blood Bank Supervisor), Gaurav Kumar (X-Ray
-                  Tech), Vishal Kumar (Lab In-charge), and Rohit Sharma (Lab Tech).</p>
+                <h4>Supervisory & Technical Team</h4>
+                <span>Mohammad Shadan (Tech Supervisor) & Rahul Kumar (Blood Bank Supervisor)</span>
+                <p>Leading the laboratory operations and blood bank transfusion services with certified technologists and 24/7 emergency response staff including Gaurav Kumar (X-Ray Tech), Vishal Kumar (Lab In-charge), and Rohit Sharma (Lab Tech).</p>
+                <div class="mt-2">
+                  <a href="assets/img/team-leadership.jpg" class="glightbox small fw-semibold text-primary d-inline-flex align-items-center gap-1" data-glightbox="title: Centre Leadership & Organogram; description: Official organogram and supervisory leadership of Janta Charitable Blood Centre.">
+                    <i class="bi bi-diagram-3-fill text-danger"></i> View Centre Organogram & Board
+                  </a>
+                </div>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -661,23 +708,61 @@
     </section><!-- /Doctors Section -->
 
     <!-- Community Initiatives Section -->
-    <section id="community" class="section py-5"
+    <section id="community" class="community section py-5"
       style="background: linear-gradient(135deg, rgba(239, 45, 86, 0.05) 0%, rgba(9, 56, 114, 0.05) 100%);">
-      <div class="container text-center" data-aos="fade-up">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="community-img-card position-relative rounded-4 overflow-hidden shadow-lg">
+              <img src="assets/img/blood-bank-center.jpg" alt="Janta Charitable Blood Centre & Blood Donation Camps" class="img-fluid">
+              <div class="community-img-overlay">
+                <span class="badge bg-danger rounded-pill px-3 py-2 align-self-start mb-2"><i class="bi bi-heart-pulse-fill me-1"></i> 24x7 Open Blood Centre</span>
+                <h4 class="text-white fw-bold mb-1">जनता चैरिटेबल ब्लड सेंटर</h4>
+                <p class="text-white-50 small mb-0">संचालित: जन जीवन कल्याण समिति (रजि.) • Lic No. U.P./B & B.P./2022</p>
+              </div>
+              <a href="assets/img/blood-bank-center.jpg" class="glightbox position-absolute top-0 end-0 m-3 btn btn-light btn-sm rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 38px; height: 38px;" data-glightbox="title: Janta Charitable Blood Centre Entrance & Donation Drives; description: 24x7 blood bank facility with voluntary donation camp archives." title="View Full Photo">
+                <i class="bi bi-arrows-fullscreen text-dark"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 ps-lg-4" data-aos="fade-left">
             <span class="badge px-3 py-2 rounded-5 mb-3"
-              style="background: var(--accent-color); font-size: 13px; color: white;">Outreach & Care</span>
+              style="background: var(--cta-bg-color); font-size: 13px; color: white;">Outreach & Care</span>
             <h3 class="fw-bold mb-2 text-dark">Community Initiatives</h3>
-            <h4 class="h6 mb-4 fw-semibold text-muted text-uppercase tracking-wider">Health Camps & Blood Donation
-              Awareness</h4>
-            <p class="mb-4 text-muted" style="line-height: 1.8; font-size: 16px;">
-              At Janta Diagnostic Centre & Blood Bank, we actively organize local diagnostic health camps and blood
-              donation awareness programs to promote wellness, encourage preventive health screening, and support blood
-              donation initiatives in Bijnor district.
+            <h4 class="h6 mb-3 fw-semibold text-muted text-uppercase tracking-wider">Health Camps & Blood Donation Awareness</h4>
+            <p class="mb-4 text-muted" style="line-height: 1.8; font-size: 15px;">
+              At Janta Diagnostic Centre & Blood Bank, we actively organize local diagnostic health camps and voluntary blood donation awareness drives across Noorpur and Bijnor district to support patient survival and promote preventive wellness.
             </p>
-            <a href="#contact" class="btn text-white px-4 py-2 rounded-5 fw-bold"
-              style="background: var(--brand-gradient); border: none; text-decoration: none;">Partner With Us</a>
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-start gap-2 p-3 rounded-3 bg-white shadow-sm border-start border-4 border-danger">
+                  <i class="bi bi-droplet-fill text-danger fs-4 mt-1"></i>
+                  <div>
+                    <h6 class="fw-bold mb-1 text-dark">Thalassemia Support</h6>
+                    <p class="text-muted small mb-0">Free blood support for thalassemia patients (subject to availability).</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-start gap-2 p-3 rounded-3 bg-white shadow-sm border-start border-4 border-primary">
+                  <i class="bi bi-people-fill text-primary fs-4 mt-1"></i>
+                  <div>
+                    <h6 class="fw-bold mb-1 text-dark">Voluntary Donor Drives</h6>
+                    <p class="text-muted small mb-0">Active camps with police, educators, doctors, and youth volunteers.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="tel:+919058395342" class="btn text-white px-4 py-2 rounded-5 fw-bold d-inline-flex align-items-center gap-2"
+                style="background: var(--cta-bg-color); border: none; text-decoration: none;">
+                <i class="bi bi-telephone-fill"></i> Blood Hotline: 90583-95342
+              </a>
+              <a href="https://wa.me/918126189415?text=Hello%20Janta%20Diagnostic,%20we%20want%20to%20partner/volunteer%20for%20a%20blood%20donation%20or%20health%20camp."
+                target="_blank" class="btn btn-outline-primary px-4 py-2 rounded-5 fw-bold d-inline-flex align-items-center gap-2">
+                <i class="bi bi-whatsapp"></i> Partner With Us
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -792,11 +877,10 @@
         <div class="row align-items-center">
 
           <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
-            <h3>Testimonials</h3>
+            <span class="badge px-3 py-2 rounded-5 mb-3 text-white" style="background: var(--cta-bg-color); font-size: 13px;">Community Trust</span>
+            <h3>What Our Patients & Doctors Say</h3>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              Dedicated to delivering precision healthcare and life-saving blood support. Read experiences from patients, consulting doctors, and families across Noorpur and Bijnor district.
             </p>
           </div>
 
@@ -824,10 +908,10 @@
                   <div class="testimonial-item">
                     <div class="d-flex">
                       <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0"
-                        alt="">
+                        alt="Dr. K. P. Verma">
                       <div>
-                        <h3>Saul Goodman</h3>
-                        <h4>Ceo &amp; Founder</h4>
+                        <h3>Dr. K. P. Verma</h3>
+                        <h4>Senior Consulting Physician • Bijnor</h4>
                         <div class="stars">
                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -836,9 +920,7 @@
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                        Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at
-                        semper.</span>
+                      <span>We regularly refer patients to Janta Diagnostic for digital X-Ray and biochemistry investigations. Their automated Erba analyzer provides fast, highly dependable clinical values, and their reporting turnaround is exemplary.</span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
@@ -848,10 +930,10 @@
                   <div class="testimonial-item">
                     <div class="d-flex">
                       <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0"
-                        alt="">
+                        alt="Rajesh Sharma">
                       <div>
-                        <h3>Sara Wilsson</h3>
-                        <h4>Designer</h4>
+                        <h3>Rajesh Sharma</h3>
+                        <h4>Resident • Noorpur</h4>
                         <div class="stars">
                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -860,9 +942,7 @@
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum
-                        eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim
-                        culpa.</span>
+                      <span>Got routine blood work and lipid profile done for my parents. The home sample collection technician arrived strictly on time, observed strict sanitation, and we got our PDF reports directly on WhatsApp the same evening.</span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
@@ -872,10 +952,10 @@
                   <div class="testimonial-item">
                     <div class="d-flex">
                       <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0"
-                        alt="">
+                        alt="Smt. Urmila Devi">
                       <div>
-                        <h3>Jena Karlis</h3>
-                        <h4>Store Owner</h4>
+                        <h3>Smt. Urmila Devi</h3>
+                        <h4>Patient Family • Dhampur</h4>
                         <div class="stars">
                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -884,8 +964,7 @@
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
-                        minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                      <span>When our relative required PRBC blood units urgently at midnight, Janta Charitable Blood Centre's 24/7 team provided immediate assistance with utmost transparency and compassion. A true lifeline for families in emergency.</span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
@@ -895,10 +974,10 @@
                   <div class="testimonial-item">
                     <div class="d-flex">
                       <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0"
-                        alt="">
+                        alt="Mohammad Imran">
                       <div>
-                        <h3>Matt Brandon</h3>
-                        <h4>Freelancer</h4>
+                        <h3>Mohammad Imran</h3>
+                        <h4>Community Social Worker</h4>
                         <div class="stars">
                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -907,9 +986,7 @@
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim
-                        velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
-                        veniam.</span>
+                      <span>Their voluntary blood donation camps and dedicated free blood support for thalassemia patients demonstrate genuine community dedication. The staff is warm, professional, and well-trained.</span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
@@ -919,10 +996,10 @@
                   <div class="testimonial-item">
                     <div class="d-flex">
                       <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0"
-                        alt="">
+                        alt="Vikas Chaudhary">
                       <div>
-                        <h3>John Larson</h3>
-                        <h4>Entrepreneur</h4>
+                        <h3>Vikas Chaudhary</h3>
+                        <h4>Local Business Owner</h4>
                         <div class="stars">
                           <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -931,9 +1008,7 @@
                     </div>
                     <p>
                       <i class="bi bi-quote quote-icon-left"></i>
-                      <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam
-                        enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi
-                        cillum quid.</span>
+                      <span>State-of-the-art facility in Noorpur! Having comprehensive pathology, biochemistry analyzers, digital X-Ray, and emergency blood bank under one single roof saves critical time and travel expenses.</span>
                       <i class="bi bi-quote quote-icon-right"></i>
                     </p>
                   </div>
@@ -956,74 +1031,146 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Gallery</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Our Facility & Technology Gallery</h2>
+        <p>Take a virtual tour of our modern diagnostic infrastructure, automated biochemistry & haematology equipment, 24/7 blood centre, and healthcare team in Noorpur.</p>
       </div><!-- End Section Title -->
 
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row g-0">
+        <div class="row g-4">
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-1.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="gallery-card">
+              <a href="assets/img/facility-building.jpg" class="glightbox" data-gallery="images-gallery"
+                data-glightbox="title: Main Facility Building; description: Modern 3-storey diagnostic building of Janta Diagnostic Centre & Blood Bank on Moradabad Road, Noorpur.">
+                <div class="gallery-img-wrap">
+                  <img src="assets/img/facility-building.jpg" alt="Janta Diagnostic Centre Building" class="img-fluid">
+                  <div class="gallery-overlay">
+                    <span class="gallery-badge"><i class="bi bi-building"></i> Facility</span>
+                    <h5>Main Facility Building</h5>
+                    <p>Moradabad Road, Noorpur</p>
+                    <i class="bi bi-arrows-fullscreen zoom-icon"></i>
+                  </div>
+                </div>
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="gallery-card">
+              <a href="assets/img/lab-haematology.jpg" class="glightbox" data-gallery="images-gallery"
+                data-glightbox="title: Haematology & Immunoassay Lab; description: Certified laboratory technologists operating automated multi-parameter hematology cell counters and immunoassay systems.">
+                <div class="gallery-img-wrap">
+                  <img src="assets/img/lab-haematology.jpg" alt="Haematology & Immunoassay Lab" class="img-fluid">
+                  <div class="gallery-overlay">
+                    <span class="gallery-badge"><i class="bi bi-clipboard2-pulse"></i> Pathology</span>
+                    <h5>Haematology Station</h5>
+                    <p>Cell Counters & Immunoassay</p>
+                    <i class="bi bi-arrows-fullscreen zoom-icon"></i>
+                  </div>
+                </div>
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="gallery-card">
+              <a href="assets/img/lab-biochemistry.jpg" class="glightbox" data-gallery="images-gallery"
+                data-glightbox="title: Erba EM 200 NEO Analyzer; description: Fully automated random-access clinical chemistry analyzer for high-speed, precision LFT, KFT, Lipids and Glucose tests.">
+                <div class="gallery-img-wrap">
+                  <img src="assets/img/lab-biochemistry.jpg" alt="Erba EM 200 NEO Chemistry Analyzer" class="img-fluid">
+                  <div class="gallery-overlay">
+                    <span class="gallery-badge"><i class="bi bi-cpu"></i> Technology</span>
+                    <h5>Erba EM 200 NEO</h5>
+                    <p>Automated Biochemistry Analyzer</p>
+                    <i class="bi bi-arrows-fullscreen zoom-icon"></i>
+                  </div>
+                </div>
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="gallery-card">
+              <a href="assets/img/blood-bank-center.jpg" class="glightbox" data-gallery="images-gallery"
+                data-glightbox="title: Janta Charitable Blood Centre 24x7; description: Dedicated 24/7 blood bank entrance, licenced under Jan Jeevan Kalyan Samiti (Regd.) with voluntary donation camp archives.">
+                <div class="gallery-img-wrap">
+                  <img src="assets/img/blood-bank-center.jpg" alt="Janta Charitable Blood Centre 24x7" class="img-fluid">
+                  <div class="gallery-overlay">
+                    <span class="gallery-badge"><i class="bi bi-droplet-fill text-danger"></i> 24x7 Open</span>
+                    <h5>Blood Centre Entrance</h5>
+                    <p>Emergency Blood & Components</p>
+                    <i class="bi bi-arrows-fullscreen zoom-icon"></i>
+                  </div>
+                </div>
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="gallery-card">
+              <a href="assets/img/team-leadership.jpg" class="glightbox" data-gallery="images-gallery"
+                data-glightbox="title: Supervisory Board & Organogram; description: Official organogram of Janta Charitable Blood Centre with management & technical supervisors.">
+                <div class="gallery-img-wrap">
+                  <img src="assets/img/team-leadership.jpg" alt="Technical & Administrative Leadership" class="img-fluid">
+                  <div class="gallery-overlay">
+                    <span class="gallery-badge"><i class="bi bi-people-fill"></i> Leadership</span>
+                    <h5>Supervisory Board</h5>
+                    <p>Official Organogram & Team</p>
+                    <i class="bi bi-arrows-fullscreen zoom-icon"></i>
+                  </div>
+                </div>
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="gallery-card">
+              <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery"
+                data-glightbox="title: Automated Chemistry Workstation; description: Precision computerized terminal ensuring reproducible testing quality and automated reporting.">
+                <div class="gallery-img-wrap">
+                  <img src="assets/img/gallery/gallery-6.jpg" alt="Automated Testing Workstation" class="img-fluid">
+                  <div class="gallery-overlay">
+                    <span class="gallery-badge"><i class="bi bi-check2-circle"></i> Quality</span>
+                    <h5>Chemistry Terminal</h5>
+                    <p>Computerized Reporting</p>
+                    <i class="bi bi-arrows-fullscreen zoom-icon"></i>
+                  </div>
+                </div>
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="gallery-card">
+              <a href="assets/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery"
+                data-glightbox="title: Community Blood Donation Drives; description: Voluntary donation camps organized with police officers, teachers, and medical staff in Bijnor.">
+                <div class="gallery-img-wrap">
+                  <img src="assets/img/gallery/gallery-7.jpg" alt="Blood Donation Drives & Health Camps" class="img-fluid">
+                  <div class="gallery-overlay">
+                    <span class="gallery-badge"><i class="bi bi-heart-pulse-fill"></i> Outreach</span>
+                    <h5>Donation Drives</h5>
+                    <p>Police & Community Camps</p>
+                    <i class="bi bi-arrows-fullscreen zoom-icon"></i>
+                  </div>
+                </div>
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="gallery-card">
+              <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery"
+                data-glightbox="title: Diagnostic Excellence & Pillars; description: Accurate Reports, Advanced Technology, Hygienic Environment, and Trusted Care.">
+                <div class="gallery-img-wrap">
+                  <img src="assets/img/gallery/gallery-8.jpg" alt="Accurate Reports & Trusted Care Pillars" class="img-fluid">
+                  <div class="gallery-overlay">
+                    <span class="gallery-badge"><i class="bi bi-shield-check"></i> Values</span>
+                    <h5>Our Core Pillars</h5>
+                    <p>Accurate, Hygienic & Trusted Care</p>
+                    <i class="bi bi-arrows-fullscreen zoom-icon"></i>
+                  </div>
+                </div>
               </a>
             </div>
           </div><!-- End Gallery Item -->
@@ -1058,16 +1205,24 @@
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Location</h3>
-                <p>Opposite Khalsa Inter College, Gandhi Nagar, Noorpur, District Bijnor, Uttar Pradesh</p>
+                <h3>Diagnostic Centre</h3>
+                <p>Opposite Khalsa Inter College, Gandhi Nagar, Noorpur, District Bijnor, UP</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="350">
+              <i class="bi bi-droplet-fill flex-shrink-0" style="color: #c30a16 !important; background: rgba(195, 10, 22, 0.1);"></i>
+              <div>
+                <h3>Charitable Blood Centre</h3>
+                <p>Plot No. 2, Metro City Colony, Moradabad Road, Opp. Panchsheel Hospital, Noorpur 246734 (Bijnor)</p>
               </div>
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
-                <h3>Call Us</h3>
-                <p>+91 8126189415<br> +91 9719951986</p>
+                <h3>Call & Helplines</h3>
+                <p><strong>Diagnostic:</strong> +91 8126189415, 9719951986<br><strong>Blood Bank (24/7):</strong> +91 90583-95342</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -1140,9 +1295,10 @@
             <img src="assets/img/logo-horizontal.png" alt="JANTA Logo" style="max-height: 50px;">
           </a>
           <div class="footer-contact pt-3">
-            <p>Opposite Khalsa Inter College,</p>
-            <p>Gandhi Nagar, Noorpur, District Bijnor, Uttar Pradesh</p>
+            <p><strong>Diagnostic:</strong> Opp. Khalsa Inter College, Gandhi Nagar, Noorpur (Bijnor)</p>
+            <p><strong>Blood Bank (24/7):</strong> Plot 2, Metro City Colony, Moradabad Rd, Noorpur</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+91 8126189415, 9719951986</span></p>
+            <p><strong>Blood Hotline:</strong> <span class="text-danger fw-bold">+91 90583-95342 (24x7)</span></p>
             <p><strong>Email:</strong> <span>jantadiagnosticscentre@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
