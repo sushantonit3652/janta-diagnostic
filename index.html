@@ -28,7 +28,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css?v=2.2" rel="stylesheet">
+  <link href="assets/css/main.css?v=2.6" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Medilab
@@ -434,7 +434,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
+        <form action="api/appointment" method="post" role="form" class="php-email-form">
           <div class="row">
             <div class="col-md-4 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
@@ -647,7 +647,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt="Dr. Sarandeep Singh">
+              <div class="pic"><img src="assets/img/doctors/doctors-1.png" class="img-fluid" alt="Dr. Sarandeep Singh">
               </div>
               <div class="member-info">
                 <h4>Dr. Sarandeep Singh</h4>
@@ -660,7 +660,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt="Dr. Sunil Agarwal">
+              <div class="pic"><img src="assets/img/doctors/doctors-2.png" class="img-fluid" alt="Dr. Sunil Agarwal">
               </div>
               <div class="member-info">
                 <h4>Dr. Sunil Agarwal</h4>
@@ -673,7 +673,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt="Dr. Yogesh Kumar">
+              <div class="pic"><img src="assets/img/doctors/doctors-3.png" class="img-fluid" alt="Dr. Yogesh Kumar">
               </div>
               <div class="member-info">
                 <h4>Dr. Yogesh Kumar</h4>
@@ -686,7 +686,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt="Mohammad Shadan & Rahul Kumar - Janta Leadership Team">
+              <div class="pic"><img src="assets/img/doctors/doctors-4.png" class="img-fluid" alt="Mohammad Shadan & Rahul Kumar - Janta Leadership Team">
               </div>
               <div class="member-info">
                 <h4>Supervisory & Technical Team</h4>
@@ -907,7 +907,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0"
+                      <img src="assets/img/testimonials/testimonials-1.png" class="testimonial-img flex-shrink-0"
                         alt="Dr. K. P. Verma">
                       <div>
                         <h3>Dr. K. P. Verma</h3>
@@ -929,7 +929,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0"
+                      <img src="assets/img/testimonials/testimonials-2.png" class="testimonial-img flex-shrink-0"
                         alt="Rajesh Sharma">
                       <div>
                         <h3>Rajesh Sharma</h3>
@@ -951,7 +951,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img flex-shrink-0"
+                      <img src="assets/img/testimonials/testimonials-3.png" class="testimonial-img flex-shrink-0"
                         alt="Smt. Urmila Devi">
                       <div>
                         <h3>Smt. Urmila Devi</h3>
@@ -973,7 +973,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0"
+                      <img src="assets/img/testimonials/testimonials-4.png" class="testimonial-img flex-shrink-0"
                         alt="Mohammad Imran">
                       <div>
                         <h3>Mohammad Imran</h3>
@@ -995,7 +995,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0"
+                      <img src="assets/img/testimonials/testimonials-5.png" class="testimonial-img flex-shrink-0"
                         alt="Vikas Chaudhary">
                       <div>
                         <h3>Vikas Chaudhary</h3>
@@ -1246,7 +1246,7 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+            <form action="api/contact" method="post" class="php-email-form" data-aos="fade-up"
               data-aos-delay="200">
               <div class="row gy-4">
 
@@ -1364,7 +1364,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js?v=2.0"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
