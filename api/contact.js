@@ -10,9 +10,33 @@ module.exports = async (req, res) => {
 
   if (req.method === 'POST') {
     const data = req.body || {};
-    console.log('New Contact Message received for Janta Diagnostic:', data);
+    console.log('New Contact Message for Janta Diagnostic:', data);
+
+    try {
+      await fetch('https://formsubmit.co/ajax/jantadiagnosticscentre@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'Referer': 'https://janta-diagnostic.vercel.app',
+          'Origin': 'https://janta-diagnostic.vercel.app'
+        },
+        body: JSON.stringify({
+          _subject: `New Contact Inquiry: ${data.subject || 'Website Message'} from ${data.name || 'Visitor'}`,
+          _template: 'table',
+          _captcha: 'false',
+          'Name': data.name,
+          'Email': data.email,
+          'Subject': data.subject,
+          'Message': data.message
+        })
+      });
+    } catch (err) {
+      console.error('Contact email forwarding error:', err);
+    }
+
     return res.status(200).send('OK');
   }
 
-  return res.status(200).json({ status: 'Contact API is active' });
+  return res.status(200).json({ status: 'Contact API active' });
 };
