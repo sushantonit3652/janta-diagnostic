@@ -2733,3 +2733,128 @@ section,
     height: 220px;
   }
 }
+
+/* 6. Advanced Diagnostic Lab Showcase (Above About Section) */
+.about-lab-showcase {
+  margin-bottom: 50px;
+}
+
+.about-lab-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(3, 56, 115, 0.12);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid rgba(3, 56, 115, 0.08);
+  height: 100%;
+}
+
+.about-lab-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 20px 45px rgba(3, 56, 115, 0.2);
+}
+
+.about-lab-img-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+  width: 100%;
+}
+
+.about-lab-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.about-lab-card:hover .about-lab-img-wrap img {
+  transform: scale(1.06);
+}
+
+.about-lab-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(3, 56, 115, 0.1) 0%, rgba(0, 25, 59, 0.88) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  color: #ffffff;
+  transition: background 0.3s ease;
+}
+
+.about-lab-card:hover .about-lab-overlay {
+  background: linear-gradient(180deg, rgba(3, 56, 115, 0.2) 0%, rgba(0, 25, 59, 0.94) 100%);
+}
+
+.about-lab-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #033873;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 50px;
+  margin-bottom: 12px;
+  align-self: flex-start;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(6px);
+}
+
+.about-lab-overlay h4 {
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.about-lab-overlay p {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 13px;
+  margin-bottom: 12px;
+  line-height: 1.45;
+}
+
+.about-lab-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px);
+  padding: 6px 14px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.about-lab-card:hover .about-lab-action {
+  background: #c30a16;
+  border-color: #c30a16;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .about-lab-img-wrap {
+    height: 270px;
+  }
+  .about-lab-overlay {
+    padding: 16px;
+  }
+  .about-lab-overlay h4 {
+    font-size: 17px;
+  }
+  .about-lab-overlay p {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+}

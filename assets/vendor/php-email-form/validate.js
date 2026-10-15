@@ -75,7 +75,7 @@
             sentMessage.innerHTML = `
               <div class="py-2 text-start">
                 <div class="fw-bold mb-1 text-success fs-6"><i class="bi bi-check-circle-fill me-1"></i> Appointment Request Submitted!</div>
-                <div class="small text-muted mb-2">Details <strong>jantadiagnosticscentre@gmail.com</strong> par bhej di gayi hain. Humari team aapse <strong>${phone || 'phone'}</strong> par jald hi sampark karegi.</div>
+                <div class="small text-muted mb-2">Details <strong>jantadiagnosticscentre@gmail.com</strong> par bhej di gayi hain. Humari team aapse <strong>${phone || 'phone'}</strong>is number par jald hi sampark karegi.</div>
                 <div class="mt-2 d-flex flex-wrap gap-2">
                   <a href="https://wa.me/918126189415?text=${waText}" target="_blank" 
                      class="btn btn-sm btn-success fw-bold d-inline-flex align-items-center gap-2 px-3 py-2 shadow-sm rounded-pill">
@@ -124,25 +124,25 @@
         },
         body: JSON.stringify(emailPayload)
       })
-      .then(() => {
-        // Also ping local/Vercel API in background
-        try {
-          fetch(action, { method: 'POST', body: formData });
-        } catch (_) {}
-        showSuccessUI();
-      })
-      .catch((err) => {
-        console.warn('Direct email dispatch fallback:', err);
-        // Fallback to internal API route
-        fetch(action, {
-          method: 'POST',
-          body: formData,
-          headers: { 'X-Requested-With': 'XMLHttpRequest' }
-        })
-        .finally(() => {
+        .then(() => {
+          // Also ping local/Vercel API in background
+          try {
+            fetch(action, { method: 'POST', body: formData });
+          } catch (_) { }
           showSuccessUI();
+        })
+        .catch((err) => {
+          console.warn('Direct email dispatch fallback:', err);
+          // Fallback to internal API route
+          fetch(action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'X-Requested-With': 'XMLHttpRequest' }
+          })
+            .finally(() => {
+              showSuccessUI();
+            });
         });
-      });
 
     });
   });
