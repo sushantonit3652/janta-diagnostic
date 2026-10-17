@@ -483,17 +483,17 @@ h6 {
 }
 
 .header-social-pills .social-pill {
-  width: 34px;
-  height: 34px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   color: #ffffff !important;
-  font-size: 15px;
+  font-size: 18px;
   text-decoration: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, width 0.3s ease, height 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, width 0.3s ease, height 0.3s ease, font-size 0.3s ease;
   flex-shrink: 0;
 }
 
@@ -513,17 +513,17 @@ h6 {
 
 @media (max-width: 575px) {
   .header-right-actions {
-    gap: 8px;
+    gap: 10px;
   }
 
   .header-social-pills {
-    gap: 6px;
+    gap: 7px;
   }
 
   .header-social-pills .social-pill {
-    width: 30px;
-    height: 30px;
-    font-size: 13px;
+    width: 35px;
+    height: 35px;
+    font-size: 17px;
   }
 }
 
@@ -546,6 +546,12 @@ h6 {
   font-size: 13px;
 }
 
+.scrolled .header .header-social-pills .social-pill {
+  width: 32px;
+  height: 32px;
+  font-size: 15px;
+}
+
 @media (max-width: 575px) {
   .scrolled .header .branding {
     min-height: 48px;
@@ -557,9 +563,9 @@ h6 {
   }
 
   .scrolled .header .header-social-pills .social-pill {
-    width: 26px;
-    height: 26px;
-    font-size: 11.5px;
+    width: 30px;
+    height: 30px;
+    font-size: 14.5px;
   }
 }
 
