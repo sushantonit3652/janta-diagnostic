@@ -399,8 +399,9 @@ h6 {
 }
 
 .header .branding {
-  min-height: 100px;
+  min-height: 82px;
   padding: 8px 0;
+  transition: min-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .logo {
@@ -408,9 +409,9 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 105px;
+  max-height: 62px;
   margin-right: 8px;
-  transition: transform 0.3s ease;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease;
 }
 
 .header .logo img:hover {
@@ -448,12 +449,12 @@ h6 {
   }
 
   .header .branding {
-    min-height: 80px;
+    min-height: 76px;
     padding: 6px 0;
   }
 
   .header .logo img {
-    max-height: 56px;
+    max-height: 52px;
   }
 }
 
@@ -492,7 +493,7 @@ h6 {
   font-size: 15px;
   text-decoration: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, width 0.3s ease, height 0.3s ease;
   flex-shrink: 0;
 }
 
@@ -526,9 +527,40 @@ h6 {
   }
 }
 
-/* Scrolled Header State */
+/* Scrolled Header State - Smooth Modern Shrink */
 .scrolled .header {
   box-shadow: 0px 4px 20px rgba(0, 35, 82, 0.14);
+}
+
+.scrolled .header .branding {
+  min-height: 56px;
+  padding: 4px 0;
+}
+
+.scrolled .header .logo img {
+  max-height: 42px;
+}
+
+.scrolled .header .cta-btn {
+  padding: 6px 18px;
+  font-size: 13px;
+}
+
+@media (max-width: 575px) {
+  .scrolled .header .branding {
+    min-height: 48px;
+    padding: 3px 0;
+  }
+
+  .scrolled .header .logo img {
+    max-height: 34px;
+  }
+
+  .scrolled .header .header-social-pills .social-pill {
+    width: 26px;
+    height: 26px;
+    font-size: 11.5px;
+  }
 }
 
 /*--------------------------------------------------------------
