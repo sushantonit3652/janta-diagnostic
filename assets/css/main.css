@@ -467,13 +467,13 @@ h6 {
 }
 
 .scrolled .header {
-  box-shadow: 0px 4px 20px rgba(0, 35, 82, 0.12);
+  box-shadow: 0px 4px 18px rgba(0, 35, 82, 0.12);
 }
 
 .scrolled .header .topbar {
-  max-height: 0 !important;
-  min-height: 0 !important;
   height: 0 !important;
+  min-height: 0 !important;
+  max-height: 0 !important;
   padding: 0 !important;
   margin: 0 !important;
   opacity: 0 !important;
@@ -481,76 +481,37 @@ h6 {
   overflow: hidden !important;
   pointer-events: none !important;
   border: none !important;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
 }
 
 .scrolled .header .branding {
-  min-height: 56px !important;
+  min-height: 55px !important;
   padding: 4px 0 !important;
-  transition: min-height 0.3s ease, padding 0.3s ease;
+  transition: all 0.25s ease;
 }
 
 .scrolled .header .logo img {
   max-height: 42px !important;
-  transition: max-height 0.3s ease;
+  transition: all 0.25s ease;
 }
 
 @media (max-width: 575px) {
-  .scrolled .header .branding {
-    min-height: 48px !important;
-    padding: 3px 0 !important;
+  .header .branding {
+    min-height: 60px;
+    padding: 5px 0;
   }
+
+  .header .logo img {
+    max-height: 44px;
+  }
+
+  .scrolled .header .branding {
+    min-height: 46px !important;
+    padding: 2px 0 !important;
+  }
+
   .scrolled .header .logo img {
     max-height: 34px !important;
-  }
-}
-
-/* Header Social Links */
-.header-social-links {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-left: auto;
-  margin-right: 12px;
-}
-
-.header-social-links .social-icon-btn {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff !important;
-  font-size: 15px;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
-.header-social-links .social-icon-btn.facebook {
-  background: #1877F2;
-}
-
-.header-social-links .social-icon-btn.instagram {
-  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-}
-
-.header-social-links .social-icon-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  color: #ffffff !important;
-}
-
-@media (max-width: 575px) {
-  .header-social-links {
-    margin-right: 8px;
-    gap: 6px;
-  }
-  .header-social-links .social-icon-btn {
-    width: 28px;
-    height: 28px;
-    font-size: 13px;
   }
 }
 
