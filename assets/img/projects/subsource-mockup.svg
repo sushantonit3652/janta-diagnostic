@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgG2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a121e"/>
+      <stop offset="100%" stop-color="#111c2e"/>
+    </linearGradient>
+    <linearGradient id="cardG2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="greenG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <filter id="shadow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bgG2)"/>
+  
+  <!-- Radar circles background effect -->
+  <g opacity="0.15" stroke="#38bdf8" fill="none" stroke-width="1.5">
+    <circle cx="300" cy="200" r="80"/>
+    <circle cx="300" cy="200" r="140"/>
+    <circle cx="300" cy="200" r="200"/>
+    <line x1="100" y1="200" x2="500" y2="200"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+  </g>
+
+  <text x="30" y="42" font-family="'Poppins', sans-serif" font-size="12" font-weight="700" fill="#10b981" letter-spacing="1.5">SUBSOURCETRACKING APP</text>
+  <text x="30" y="60" font-family="'Poppins', sans-serif" font-size="11" fill="#94a3b8">GPS Tracking • Clock In/Out • Shift &amp; Break Log</text>
+
+  <!-- Concept visual badge -->
+  <g transform="translate(420, 26)">
+    <rect width="150" height="24" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="75" y="16" font-family="'Poppins', sans-serif" font-size="9.5" font-weight="600" fill="#94a3b8" text-anchor="middle">CONCEPT VISUAL</text>
+  </g>
+
+  <!-- Central Mobile Device Mockup Frame -->
+  <g transform="translate(190, 65)" filter="url(#shadow2)">
+    <rect width="220" height="320" rx="30" fill="#020617" stroke="#334155" stroke-width="3"/>
+    <rect x="8" y="8" width="204" height="304" rx="22" fill="#090d16"/>
+    <rect x="80" y="14" width="60" height="12" rx="6" fill="#000000"/>
+
+    <!-- App Header -->
+    <text x="22" y="45" font-family="'Poppins', sans-serif" font-size="12" font-weight="700" fill="#ffffff">SubSource</text>
+    <rect x="145" y="34" width="55" height="18" rx="9" fill="#065f46"/>
+    <circle cx="155" cy="43" r="3" fill="#10b981"/>
+    <text x="175" y="46" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#10b981" text-anchor="middle">ON CLOCK</text>
+
+    <!-- Shift Duration Timer Display -->
+    <rect x="20" y="60" width="180" height="60" rx="10" fill="url(#cardG2)" stroke="#1e293b"/>
+    <text x="30" y="78" font-family="'Poppins', sans-serif" font-size="9" fill="#94a3b8">Active Shift Duration</text>
+    <text x="30" y="104" font-family="'Poppins', sans-serif" font-size="20" font-weight="700" fill="#ffffff" letter-spacing="1">05:42:19</text>
+
+    <!-- GPS Telemetry Status Strip -->
+    <g transform="translate(20, 128)">
+      <rect width="180" height="32" rx="8" fill="#131e32" stroke="#1e293b"/>
+      <circle cx="18" cy="16" r="4" fill="#38bdf8"/>
+      <text x="30" y="15" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="600" fill="#ffffff">GPS Tracking Active</text>
+      <text x="30" y="24" font-family="'Poppins', sans-serif" font-size="7" fill="#64748b">Lat 28.6139° N, Long 77.2090° E</text>
+      <text x="156" y="20" font-family="'Poppins', sans-serif" font-size="8" font-weight="600" fill="#10b981">± 3m</text>
+    </g>
+
+    <!-- Action Buttons (Break & Clock Out) -->
+    <g transform="translate(20, 170)">
+      <!-- Take Break Button -->
+      <rect width="85" height="36" rx="8" fill="#334155"/>
+      <text x="42" y="22" font-family="'Poppins', sans-serif" font-size="9" font-weight="600" fill="#e2e8f0" text-anchor="middle">☕ Break (15m)</text>
+
+      <!-- Clock Out Button -->
+      <rect x="95" width="85" height="36" rx="8" fill="#be123c"/>
+      <text x="137" y="22" font-family="'Poppins', sans-serif" font-size="9" font-weight="600" fill="#ffffff" text-anchor="middle">Clock Out</text>
+    </g>
+
+    <!-- Recent Geofence Verification -->
+    <rect x="20" y="216" width="180" height="48" rx="8" fill="url(#cardG2)" stroke="#1e293b"/>
+    <text x="30" y="232" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="600" fill="#e2e8f0">Site #4 - North Logistics Hub</text>
+    <text x="30" y="244" font-family="'Poppins', sans-serif" font-size="7.5" fill="#64748b">Verified inside designated boundary</text>
+    <text x="30" y="255" font-family="'Poppins', sans-serif" font-size="7.5" fill="#10b981">✓ Sync Status: Up-to-date</text>
+
+    <!-- Bottom Navigation -->
+    <rect x="8" y="272" width="204" height="40" rx="0" fill="#090d16" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="40" cy="290" r="5" fill="#10b981"/>
+    <circle cx="80" cy="290" r="5" fill="#475569"/>
+    <circle cx="128" cy="290" r="5" fill="#475569"/>
+    <circle cx="174" cy="290" r="5" fill="#475569"/>
+  </g>
+
+  <!-- Side info tags -->
+  <g transform="translate(30, 240)">
+    <rect width="130" height="32" rx="6" fill="#131e32" stroke="#1e293b"/>
+    <text x="12" y="20" font-family="'Poppins', sans-serif" font-size="9.5" font-weight="600" fill="#10b981">⏱ Attendance Clock</text>
+  </g>
+  <g transform="translate(30, 285)">
+    <rect width="130" height="32" rx="6" fill="#131e32" stroke="#1e293b"/>
+    <text x="12" y="20" font-family="'Poppins', sans-serif" font-size="9.5" font-weight="600" fill="#10b981">☕ Break Management</text>
+  </g>
+  <g transform="translate(435, 240)">
+    <rect width="135" height="32" rx="6" fill="#131e32" stroke="#1e293b"/>
+    <text x="12" y="20" font-family="'Poppins', sans-serif" font-size="9.5" font-weight="600" fill="#38bdf8">📍 Background GPS</text>
+  </g>
+  <g transform="translate(435, 285)">
+    <rect width="135" height="32" rx="6" fill="#131e32" stroke="#1e293b"/>
+    <text x="12" y="20" font-family="'Poppins', sans-serif" font-size="9.5" font-weight="600" fill="#38bdf8">🔄 Offline Sync Queue</text>
+  </g>
+</svg>

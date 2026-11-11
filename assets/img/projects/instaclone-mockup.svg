@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgG3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120d1c"/>
+      <stop offset="100%" stop-color="#1b122c"/>
+    </linearGradient>
+    <linearGradient id="instaStoryG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="cardG3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f1833"/>
+      <stop offset="100%" stop-color="#130e20"/>
+    </linearGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bgG3)"/>
+  
+  <text x="30" y="42" font-family="'Poppins', sans-serif" font-size="12" font-weight="700" fill="#ec4899" letter-spacing="1.5">INSTACLONE SOCIAL APP</text>
+  <text x="30" y="60" font-family="'Poppins', sans-serif" font-size="11" fill="#94a3b8">Firebase Auth • Firestore • Cloudinary • Realtime Feeds</text>
+
+  <!-- Concept visual badge -->
+  <g transform="translate(420, 26)">
+    <rect width="150" height="24" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="75" y="16" font-family="'Poppins', sans-serif" font-size="9.5" font-weight="600" fill="#94a3b8" text-anchor="middle">CONCEPT VISUAL</text>
+  </g>
+
+  <!-- Central Mobile Device Mockup Frame -->
+  <g transform="translate(190, 65)" filter="url(#shadow3)">
+    <rect width="220" height="320" rx="30" fill="#020617" stroke="#334155" stroke-width="3"/>
+    <rect x="8" y="8" width="204" height="304" rx="22" fill="#090d16"/>
+    <rect x="80" y="14" width="60" height="12" rx="6" fill="#000000"/>
+
+    <!-- App Top Bar -->
+    <text x="22" y="44" font-family="'Poppins', sans-serif" font-size="13" font-style="italic" font-weight="700" fill="#ffffff">InstaClone</text>
+    <text x="160" y="44" font-family="sans-serif" font-size="14" fill="#ffffff">♥</text>
+    <text x="185" y="44" font-family="sans-serif" font-size="14" fill="#ffffff">✈</text>
+
+    <!-- Stories Row -->
+    <g transform="translate(15, 54)">
+      <!-- Story 1 with gradient ring -->
+      <circle cx="20" cy="18" r="15" fill="none" stroke="url(#instaStoryG)" stroke-width="2"/>
+      <circle cx="20" cy="18" r="12" fill="#334155"/>
+      <text x="20" y="40" font-family="'Poppins', sans-serif" font-size="7" fill="#94a3b8" text-anchor="middle">Your Story</text>
+
+      <!-- Story 2 -->
+      <circle cx="62" cy="18" r="15" fill="none" stroke="url(#instaStoryG)" stroke-width="2"/>
+      <circle cx="62" cy="18" r="12" fill="#475569"/>
+      <text x="62" y="40" font-family="'Poppins', sans-serif" font-size="7" fill="#94a3b8" text-anchor="middle">alex_m</text>
+
+      <!-- Story 3 -->
+      <circle cx="104" cy="18" r="15" fill="none" stroke="url(#instaStoryG)" stroke-width="2"/>
+      <circle cx="104" cy="18" r="12" fill="#475569"/>
+      <text x="104" y="40" font-family="'Poppins', sans-serif" font-size="7" fill="#94a3b8" text-anchor="middle">sarah.k</text>
+
+      <!-- Story 4 -->
+      <circle cx="146" cy="18" r="15" fill="none" stroke="url(#instaStoryG)" stroke-width="2"/>
+      <circle cx="146" cy="18" r="12" fill="#475569"/>
+      <text x="146" y="40" font-family="'Poppins', sans-serif" font-size="7" fill="#94a3b8" text-anchor="middle">dev_hub</text>
+    </g>
+
+    <!-- Feed Post Card -->
+    <g transform="translate(12, 104)">
+      <!-- Author row -->
+      <circle cx="16" cy="14" r="10" fill="#6366f1"/>
+      <text x="32" y="16" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="600" fill="#ffffff">sushant_mobile</text>
+      <text x="180" y="16" font-family="sans-serif" font-size="10" fill="#94a3b8">•••</text>
+
+      <!-- Post Image Placeholder -->
+      <rect x="4" y="30" width="188" height="90" rx="6" fill="#1e1832" stroke="#2e2448"/>
+      <path d="M 14 105 L 55 60 L 95 90 L 140 45 L 182 105 Z" fill="#2d224d" opacity="0.8"/>
+      <circle cx="150" cy="55" r="8" fill="#f59e0b" opacity="0.8"/>
+      <text x="98" y="80" font-family="'Poppins', sans-serif" font-size="9" font-weight="600" fill="#e2e8f0" text-anchor="middle">Cloudinary Media Feed</text>
+
+      <!-- Interaction bar -->
+      <text x="8" y="132" font-family="sans-serif" font-size="11" fill="#ec4899">♥</text>
+      <text x="24" y="132" font-family="sans-serif" font-size="11" fill="#94a3b8">💬</text>
+      <text x="40" y="132" font-family="sans-serif" font-size="11" fill="#94a3b8">✈</text>
+      <text x="175" y="132" font-family="sans-serif" font-size="11" fill="#94a3b8">🔖</text>
+
+      <text x="8" y="148" font-family="'Poppins', sans-serif" font-size="7.5" font-weight="600" fill="#ffffff">Liked by tech_lead and 482 others</text>
+      <text x="8" y="158" font-family="'Poppins', sans-serif" font-size="7" fill="#94a3b8">Real-time comments powered by Firestore</text>
+    </g>
+
+    <!-- Bottom Navigation -->
+    <rect x="8" y="272" width="204" height="40" rx="0" fill="#090d16" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="36" cy="290" r="5" fill="#ec4899"/>
+    <circle cx="74" cy="290" r="5" fill="#475569"/>
+    <circle cx="112" cy="290" r="6" fill="#6366f1"/>
+    <circle cx="150" cy="290" r="5" fill="#475569"/>
+    <circle cx="184" cy="290" r="5" fill="#475569"/>
+  </g>
+
+  <!-- Side info tags -->
+  <g transform="translate(30, 240)">
+    <rect width="130" height="32" rx="6" fill="#1b122e" stroke="#2e224a"/>
+    <text x="12" y="20" font-family="'Poppins', sans-serif" font-size="9.5" font-weight="600" fill="#ec4899">🔐 Firebase Auth</text>
+  </g>
+  <g transform="translate(30, 285)">
+    <rect width="130" height="32" rx="6" fill="#1b122e" stroke="#2e224a"/>
+    <text x="12" y="20" font-family="'Poppins', sans-serif" font-size="9.5" font-weight="600" fill="#ec4899">☁ Cloudinary CDN</text>
+  </g>
+  <g transform="translate(435, 240)">
+    <rect width="135" height="32" rx="6" fill="#1b122e" stroke="#2e224a"/>
+    <text x="12" y="20" font-family="'Poppins', sans-serif" font-size="9.5" font-weight="600" fill="#a855f7">👥 Follow / Unfollow</text>
+  </g>
+  <g transform="translate(435, 285)">
+    <rect width="135" height="32" rx="6" fill="#1b122e" stroke="#2e224a"/>
+    <text x="12" y="20" font-family="'Poppins', sans-serif" font-size="9.5" font-weight="600" fill="#a855f7">💬 Realtime Firestore</text>
+  </g>
+</svg>
