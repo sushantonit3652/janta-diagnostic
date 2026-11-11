@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sushant-thakur.dev/sitemap.xml
+Sitemap: https://jantadiagnosticscentre.in/sitemap.xml

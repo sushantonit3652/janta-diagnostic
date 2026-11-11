@@ -1,4 +1,4 @@
-// Vercel Serverless Function for Portfolio Contact Form
+// Vercel Serverless Function for Contact Us Form
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
@@ -10,19 +10,19 @@ module.exports = async (req, res) => {
 
   if (req.method === 'POST') {
     const data = req.body || {};
-    console.log('New Contact Message for Sushant Thakur Portfolio:', data);
-
-    const targetEmail = process.env.CONTACT_EMAIL || 'sushantthakur3211@gmail.com';
+    console.log('New Contact Message for Janta Diagnostic:', data);
 
     try {
-      await fetch(`https://formsubmit.co/ajax/${targetEmail}`, {
+      await fetch('https://formsubmit.co/ajax/jantadiagnosticscentre@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Accept': 'application/json'
+          'Accept': 'application/json',
+          'Referer': 'https://janta-diagnostic.vercel.app',
+          'Origin': 'https://janta-diagnostic.vercel.app'
         },
         body: JSON.stringify({
-          _subject: `New Developer Portfolio Inquiry: ${data.subject || 'Website Message'} from ${data.name || 'Visitor'}`,
+          _subject: `New Contact Inquiry: ${data.subject || 'Website Message'} from ${data.name || 'Visitor'}`,
           _template: 'table',
           _captcha: 'false',
           'Name': data.name,
@@ -31,12 +31,12 @@ module.exports = async (req, res) => {
           'Message': data.message
         })
       });
-      return res.status(200).send('OK');
     } catch (err) {
       console.error('Contact email forwarding error:', err);
-      return res.status(500).json({ error: 'Failed to forward email' });
     }
+
+    return res.status(200).send('OK');
   }
 
-  return res.status(200).json({ status: 'Portfolio Contact API active' });
+  return res.status(200).json({ status: 'Contact API active' });
 };
